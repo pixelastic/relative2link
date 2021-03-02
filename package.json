@@ -1,19 +1,26 @@
 {
+  "description": "relative2link monorepo",
   "devDependencies": {
-    "aberlaas": "1.15.0"
+    "aberlaas": "1.13.0",
+    "lerna": "3.22.1"
   },
-  "files": ["lib/*.js"],
-  "license": "MIT",
-  "main": "lib/main.js",
-  "name": "relative2link",
+  "files": [],
+  "homepage": "https://projects.pixelastic.com/relative2link/",
+  "keywords": [],
+  "name": "relative2link-monorepo",
+  "private": true,
   "scripts": {
+    "build": "./scripts/docs/build",
+    "build:prod": "./scripts/docs/build-prod",
     "ci": "./scripts/ci",
+    "cms": "./scripts/docs/cms",
     "husky:precommit": "./scripts/husky-precommit",
     "lint": "./scripts/lint",
     "lint:fix": "./scripts/lint-fix",
     "release": "./scripts/release",
-    "test": "./scripts/test",
-    "test:watch": "./scripts/test-watch"
+    "serve": "./scripts/docs/serve",
+    "test": "./scripts/lib/test",
+    "test:watch": "./scripts/lib/test-watch"
   },
-  "version": "0.0.1"
+  "workspaces": ["lib", "docs"]
 }
