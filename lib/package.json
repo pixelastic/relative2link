@@ -1,8 +1,14 @@
 {
-  "files": ["*.js"],
+  "files": [
+    "*.js",
+    "bin/*"
+  ],
   "homepage": "https://projects.pixelastic.com/relative2link/",
   "license": "MIT",
   "main": "main.js",
+  "bin": {
+    "relative2link": "bin/relative2link"
+  },
   "name": "relative2link",
   "repository": "pixelastic/relative2link",
   "scripts": {
@@ -14,5 +20,9 @@
     "test": "../scripts/lib/test",
     "test:watch": "../scripts/lib/test-watch"
   },
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "firost": "2.7.0",
+    "golgoth": "2.0.0"
+  }
 }

@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+const relative2link = require('../main.js');
+(async function () {
+  await relative2link.run(process.argv.slice(2));
+})();
